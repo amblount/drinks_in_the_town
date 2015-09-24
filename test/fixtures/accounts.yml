@@ -3,9 +3,21 @@
 one:
   first_name: MyString
   last_name: MyString
-  age: 
+  neighborhood: MyString
+  gender: MyString
+  age: 1
+  profession: MyString
+  housing_status: MyString
+  interviewee: false
+  resident: false
 
 two:
   first_name: MyString
   last_name: MyString
-  age: 
+  neighborhood: MyString
+  gender: MyString
+  age: 1
+  profession: MyString
+  housing_status: MyString
+  interviewee: false
+  resident: false
