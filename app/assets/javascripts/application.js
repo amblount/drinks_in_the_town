@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
+//= require agency
+//= require jqBootstrapValidation
+//= require classie
+//= require cbpAnimatedHeader.min
+//= require contact_me
 //= require turbolinks
 //= require_tree .
