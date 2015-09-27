@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :accounts
-  resources :neighborhood
+  resources :neighborhoods
   resources :restaurants
 
   get 'test', to: "static_pages#test"
