@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  resources :accounts 
+  get 'restaurants/name:string'
+
+  get 'restaurants/food_category:string'
+
+  get 'restaurants/neighborhood_id:integer'
+
+  resources :accounts
+  resources :neighborhoods
+  resources :restaurants
+  
   get 'test', to: "static_pages#test"
 
   root 'static_pages#home'

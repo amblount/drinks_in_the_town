@@ -1,0 +1,8 @@
+<div class="col-xs-12">
+  <%= simple_form_for(@restaurant, html: { class: 'form-horizontal' }) do |f| %>
+  <%= f.input :name label: false, input_html: {placeholder: "Name"%>
+  <%= f.input :neighborhood label: false, input_html: {placeholder: "neighborhood"%>
+  <%= f.input :food_category label: false, input_html: {placeholder: "Enter Type of food"%>
+  <%= f.submit "Submit".html_safe, class: "btn btn-lg btn-danger" %>
+  <% end %>
+</div>
