@@ -8,6 +8,8 @@
 #  age        :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  gender     :string
+#  occupation :string
 #
 
 class Account < ActiveRecord::Base
