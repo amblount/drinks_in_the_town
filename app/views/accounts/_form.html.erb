@@ -1,0 +1,10 @@
+<div class="col-xs-12">
+  <%= simple_form_for(@account, html: { class: 'form-horizontal' }) do |f| %>
+  <%= f.input :first_name label: false, input_html: {placeholder: " First Name"%>
+  <%= f.input :last_name label: false, input_html: {placeholder: "Last Name"%>
+  <%= f.input :age label: false, input_html: {placeholder: "Enter Number"%>
+  <%= f.input :gender%>
+  <%= f.input :occupation label: false, input_html: {placeholder: "Ex. Small Business Owner"%>
+  <%= f.submit "Submit".html_safe, class: "btn btn-lg btn-danger" %>
+  <% end %>
+</div>

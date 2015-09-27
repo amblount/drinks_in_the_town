@@ -1,14 +1,5 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
-  get 'accounts/index'
-
-  get 'accounts/show'
-
-  get 'accounts/new'
-
-  get 'accounts/edit'
-
+  resources :accounts 
   get 'test', to: "static_pages#test"
 
   root 'static_pages#home'
