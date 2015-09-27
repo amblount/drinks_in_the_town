@@ -23,11 +23,12 @@ class AccountsController < ApplicationController
   end
 
   def update
-  @account = get_account
-  if @account.update(account_params)
-    redirect_to accountt_path(@account), notice: "Account successfully updated"
-  else
-    render "edit"
+    @account = get_account
+    if @account.update(account_params)
+      redirect_to accountt_path(@account), notice: "Account successfully updated"
+    else
+      render "edit"
+    end
   end
 
   def delete
@@ -43,6 +44,6 @@ class AccountsController < ApplicationController
   end
 
   def account_params
-    params.require(:account).permit(:first_name, :last_name, :occupation, :)
+    params.require(:account).permit(:first_name, :last_name, :occupation)
   end
 end
