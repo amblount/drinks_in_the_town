@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929024656) do
+ActiveRecord::Schema.define(version: 20150929070934) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "first_name"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 20150929024656) do
     t.datetime "updated_at", null: false
     t.string   "gender"
     t.string   "occupation"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "neighborhoods", force: :cascade do |t|
@@ -52,6 +61,18 @@ ActiveRecord::Schema.define(version: 20150929024656) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.integer  "phone_number"
+    t.boolean  "neighborhood"
+    t.boolean  "interviewee"
+    t.string   "restaurant"
+    t.string   "drink_type"
+    t.string   "occupation"
+    t.boolean  "home_owner"
+    t.boolean  "oakland_transplant"
+    t.datetime "interview_date"
+    t.text     "gentrification"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -3,4 +3,14 @@
 professionals. Drinks In Town is a video blog, interviewing Oaklanders and small business owners. Only
 Oakland residents are allowed access to premium content, if you are a guest you do have limied access. Enjoy!</p>
 
-<% link_to "test", root_path, class: 'btn btn-lg btn-warning' %>
+<% if user_signed_in? %>
+
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+
+<% else %>
+
+<%= link_to "Sign In", new_user_session_path %>
+
+<%= link_to "Sign Up", new_user_registration_path %>
+
+<%end %>

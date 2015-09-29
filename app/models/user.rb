@@ -15,6 +15,18 @@
 #  last_sign_in_ip        :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  first_name             :string
+#  last_name              :string
+#  phone_number           :integer
+#  neighborhood           :boolean
+#  interviewee            :boolean
+#  restaurant             :string
+#  drink_type             :string
+#  occupation             :string
+#  home_owner             :boolean
+#  oakland_transplant     :boolean
+#  interview_date         :datetime
+#  gentrification         :text
 #
 
 class User < ActiveRecord::Base

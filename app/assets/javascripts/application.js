@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require fullcalendar
+//= require moment
 //= require bootstrap-sprockets
 //= require agency
 //= require jqBootstrapValidation
