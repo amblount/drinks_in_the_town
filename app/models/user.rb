@@ -18,7 +18,6 @@
 #  first_name             :string
 #  last_name              :string
 #  phone_number           :integer
-#  neighborhood           :boolean
 #  interviewee            :boolean
 #  restaurant             :string
 #  drink_type             :string
@@ -27,6 +26,7 @@
 #  oakland_transplant     :boolean
 #  interview_date         :datetime
 #  gentrification         :text
+#  neighborhood_id        :integer
 #
 
 class User < ActiveRecord::Base
@@ -34,4 +34,5 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  belongs_to :neighborhood
 end

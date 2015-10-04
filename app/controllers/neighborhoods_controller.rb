@@ -2,6 +2,9 @@ class NeighborhoodsController < ApplicationController
   def new
     @neighborhood = Neighborhood.new
   end
+  def show
+    # do this
+  end
 
   def create
     @neighborhood = Neighborhood.new(neighborhood_params)

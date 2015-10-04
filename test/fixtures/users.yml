@@ -18,7 +18,6 @@
 #  first_name             :string
 #  last_name              :string
 #  phone_number           :integer
-#  neighborhood           :boolean
 #  interviewee            :boolean
 #  restaurant             :string
 #  drink_type             :string
@@ -27,6 +26,7 @@
 #  oakland_transplant     :boolean
 #  interview_date         :datetime
 #  gentrification         :text
+#  neighborhood_id        :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

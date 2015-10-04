@@ -10,21 +10,15 @@
     <%= f.input :first_name, required: true %>
     <%= f.input :last_name, required: true %>
     <%= f.input :phone_number, required: true %>
-    <%= f.input :neighborhood, :collection => ['Temescal','East Lake-Bella Vista'] %>
+    <%= f.association :neighborhood, :label_method => :name %>
     <%= f.input :interviewee, required: true %>
     <%= f.input :restaurant, required: true %>
     <%= f.input :drink_type, required: true %>
     <%= f.input :occupation, required: true %>
     <%= f.input :home_owner, required: true %>
-    <%= f.input :oakland_transplant, required: true %>
-    <%= f.input :interview_date, required: true %>
-    <%= f.input :gentrification, required: true %>
-
-
-
-
-
-
+    <%= f.input :oakland_transplant %>
+    <%= f.input :interview_date %>
+    <%= f.input :gentrification %>
 
   </div>
 
